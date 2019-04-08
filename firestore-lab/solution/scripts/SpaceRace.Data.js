@@ -35,6 +35,11 @@ SpaceRace.prototype.getDocumentsInQuery = function(query, render) {
         render(change.doc);
       }
       // add modified
+      else if (change.type === 'modified') {
+        //document.getElementById(change.doc.id).remove();
+        console.log("modified");
+      }
+
       else if (change.type === 'removed') {
         document.getElementById(change.doc.id).remove();
       }
