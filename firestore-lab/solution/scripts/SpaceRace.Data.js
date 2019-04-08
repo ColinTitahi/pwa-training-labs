@@ -38,7 +38,7 @@ SpaceRace.prototype.getDocumentsInQuery = function(query, render) {
       else if (change.type === 'modified') {
         //document.getElementById(change.doc.id).remove();
         console.log("modified");
-        //document.getElementById(change.doc.id).getElementsByClassName("ship-name")[0].innerHTM = "Boo";
+        // need to update display somehow
       }
 
       else if (change.type === 'removed') {
